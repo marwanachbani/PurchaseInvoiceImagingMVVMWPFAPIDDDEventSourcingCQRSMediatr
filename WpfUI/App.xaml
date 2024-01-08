@@ -1,0 +1,15 @@
+﻿<Application x:Class="WpfUI.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:WpfUI" xmlns:views="clr-namespace:WpfUI.Views" xmlns:viewmodels="clr-namespace:WpfUI.ViewModels"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <DataTemplate DataType="{x:Type viewmodels:LoginViewModel }">
+            <views:LoginView />
+        </DataTemplate>
+
+        <DataTemplate DataType="{x:Type viewmodels:AppZoneViewModel}">
+            <views:AppZone />
+        </DataTemplate>
+    </Application.Resources>
+</Application>
