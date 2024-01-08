@@ -1,0 +1,27 @@
+﻿<UserControl x:Class="WpfApp1.Views.InfoZoneViews.CreateNewContent"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:WpfApp1.Views.InfoZoneViews" xmlns:viewmodels="clr-namespace:WpfApp1.ViewModels" 
+             mc:Ignorable="d" 
+             d:DesignHeight="550" d:DesignWidth="400">
+    <Grid Background="White">
+        <Image Width="64" Height="64" Margin="41,21,295,465" Source="/Views/InfoZoneViews/archive (1).png" />
+        <TextBlock Text="Create new Content" VerticalAlignment="Top" HorizontalAlignment="Left" Height="57" Foreground="#FF171496" FontSize="24" Margin="138,38,0,0" FontWeight="Bold" />
+        <DatePicker SelectedDate="{Binding Content}" HorizontalAlignment="Left" Margin="73,169,0,0" VerticalAlignment="Top" Width="297" FontSize="16"/>
+        <Button Command="{Binding CreateContentCommand , Mode=OneWay}" Background="#FF171496" Foreground="White"  VerticalAlignment="Bottom" Width="100" Height="22" Margin="270,0,30,269" >
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="5"/>
+                </Style>
+            </Button.Resources>
+            <StackPanel>
+                
+                <TextBlock Text="Create"/>
+            </StackPanel>
+        </Button>
+        <Image HorizontalAlignment="Left" Height="28" Margin="41,169,0,0" VerticalAlignment="Top" Width="26" Source="/Views/InfoZoneViews/calendar.png"/>
+        <TextBlock Text="{Binding Response}" HorizontalAlignment="Center" Margin="0,304,0,179" Foreground="#FFEF2020" TextAlignment="Center" />
+    </Grid>
+</UserControl>

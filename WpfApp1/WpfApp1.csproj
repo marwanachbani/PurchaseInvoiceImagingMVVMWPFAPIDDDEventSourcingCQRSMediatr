@@ -1,0 +1,91 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net7.0-windows</TargetFramework>
+    <Nullable>disable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Views\add.png" />
+    <None Remove="Views\archive %281%29.png" />
+    <None Remove="Views\archive %282%29.png" />
+    <None Remove="Views\cloud-data.png" />
+    <None Remove="Views\colors.png" />
+    <None Remove="Views\edit.png" />
+    <None Remove="Views\eye.png" />
+    <None Remove="Views\file %281%29.png" />
+    <None Remove="Views\file %282%29.png" />
+    <None Remove="Views\folder.png" />
+    <None Remove="Views\image.png" />
+    <None Remove="Views\InfoZoneViews\archive %281%29.png" />
+    <None Remove="Views\InfoZoneViews\calendar.png" />
+    <None Remove="Views\InfoZoneViews\invoice %281%29.png" />
+    <None Remove="Views\InfoZoneViews\invoice.png" />
+    <None Remove="Views\InfoZoneViews\scanner.png" />
+    <None Remove="Views\intellectual-property.png" />
+    <None Remove="Views\invoice.png" />
+    <None Remove="Views\list %281%29.png" />
+    <None Remove="Views\measure.png" />
+    <None Remove="Views\password.png" />
+    <None Remove="Views\profile.png" />
+    <None Remove="Views\refresh.png" />
+    <None Remove="Views\replace.png" />
+    <None Remove="Views\user.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <COMReference Include="WIA">
+      <WrapperTool>tlbimp</WrapperTool>
+      <VersionMinor>0</VersionMinor>
+      <VersionMajor>1</VersionMajor>
+      <Guid>94a0e92d-43c0-494e-ac29-fd45948a5221</Guid>
+      <Lcid>0</Lcid>
+      <Isolated>false</Isolated>
+      <EmbedInteropTypes>true</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CommunityToolkit.Mvvm" Version="8.2.2" />
+    <PackageReference Include="Magick.NET-Q16-AnyCPU" Version="13.5.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="7.0.0" />
+
+    <PackageReference Include="System.Drawing.Common" Version="6.0.0" />
+    
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\UIApi\UIApi.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Views\add.png" />
+    <Resource Include="Views\archive (1).png" />
+    <Resource Include="Views\archive (2).png" />
+    <Resource Include="Views\cloud-data.png" />
+    <Resource Include="Views\colors.png" />
+    <Resource Include="Views\edit.png" />
+    <Resource Include="Views\eye.png" />
+    <Resource Include="Views\file (1).png" />
+    <Resource Include="Views\file (2).png" />
+    <Resource Include="Views\folder.png" />
+    <Resource Include="Views\image.png" />
+    <Resource Include="Views\InfoZoneViews\archive (1).png" />
+    <Resource Include="Views\InfoZoneViews\calendar.png" />
+    <Resource Include="Views\InfoZoneViews\invoice (1).png" />
+    <Resource Include="Views\InfoZoneViews\invoice.png" />
+    <Resource Include="Views\InfoZoneViews\scanner.png" />
+    <Resource Include="Views\intellectual-property.png" />
+    <Resource Include="Views\invoice.png" />
+    <Resource Include="Views\list (1).png" />
+    <Resource Include="Views\measure.png" />
+    <Resource Include="Views\password.png" />
+    <Resource Include="Views\profile.png" />
+    <Resource Include="Views\refresh.png" />
+    <Resource Include="Views\replace.png" />
+    <Resource Include="Views\user.png" />
+  </ItemGroup>
+
+</Project>
