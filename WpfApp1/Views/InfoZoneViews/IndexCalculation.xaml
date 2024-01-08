@@ -1,0 +1,35 @@
+﻿<UserControl x:Class="WpfApp1.Views.InfoZoneViews.IndexCalculation"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:WpfApp1.Views.InfoZoneViews"
+             mc:Ignorable="d" 
+              d:DesignHeight="430" d:DesignWidth="430" Background="White">
+    <Grid>
+        <TextBox  Margin="155,35,41,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" FontSize="16"/>
+        <TextBlock HorizontalAlignment="Left" Margin="48,35,0,0" TextWrapping="Wrap" Text="Subtotal" VerticalAlignment="Top" Foreground="#FF071A48" FontSize="16"/>
+        <TextBox  Margin="155,77,41,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" FontSize="16"/>
+        <TextBlock HorizontalAlignment="Left" Margin="48,77,0,0" TextWrapping="Wrap" Text="TaxRate" VerticalAlignment="Top" Foreground="#FF071A48" FontSize="16"/>
+        <TextBox  Margin="155,123,41,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" FontSize="16"/>
+        <TextBlock HorizontalAlignment="Left" Margin="35,123,0,0" TextWrapping="Wrap" Text="TaxAmount" VerticalAlignment="Top" Foreground="#FF071A48" FontSize="16"/>
+        <TextBox  Margin="155,170,41,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" FontSize="16"/>
+        <TextBlock HorizontalAlignment="Left" Margin="26,170,0,0" TextWrapping="Wrap" Text="Reduction Rate" VerticalAlignment="Top" Foreground="#FF071A48" FontSize="16"/>
+        <TextBox  Margin="155,215,41,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" FontSize="16"/>
+        <TextBlock HorizontalAlignment="Left" Margin="11,217,0,0" TextWrapping="Wrap" Text="Reduction Amount" VerticalAlignment="Top" Foreground="#FF071A48" FontSize="16"/>
+        <TextBox  Margin="155,264,41,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" FontSize="16"/>
+        <TextBlock HorizontalAlignment="Left" Margin="63,264,0,0" TextWrapping="Wrap" Text="Total" VerticalAlignment="Top" Foreground="#FF071A48" FontSize="16"/>
+        <Button Command="{Binding ScanCommand, Mode=OneWay}" Background="#FF171496" Foreground="White"  VerticalAlignment="Bottom" Width="100" Height="22" Margin="289,0,41,32" >
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="5"/>
+                </Style>
+            </Button.Resources>
+            <StackPanel>
+
+                <TextBlock Text="Finish"/>
+            </StackPanel>
+        </Button>
+
+    </Grid>
+</UserControl>

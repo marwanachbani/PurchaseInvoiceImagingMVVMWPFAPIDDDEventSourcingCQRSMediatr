@@ -1,0 +1,36 @@
+﻿<UserControl x:Class="WpfApp1.Views.InfoZoneViews.IndexInvoiceInfo"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:WpfApp1.Views.InfoZoneViews"
+             mc:Ignorable="d" 
+             d:DesignHeight="430" d:DesignWidth="430" Background="White">
+    <Grid>
+        <TextBox  Margin="155,35,41,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" FontSize="16"/>
+        <TextBlock HorizontalAlignment="Left" Margin="48,35,0,0" TextWrapping="Wrap" Text="Invoice N°" VerticalAlignment="Top" Foreground="#FF071A48" FontSize="16"/>
+        <TextBox  Margin="155,77,41,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" FontSize="16"/>
+        <TextBlock HorizontalAlignment="Left" Margin="48,77,0,0" TextWrapping="Wrap" Text="Supplier" VerticalAlignment="Top" Foreground="#FF071A48" FontSize="16"/>
+        <TextBox  Margin="155,123,41,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" FontSize="16"/>
+        <TextBlock HorizontalAlignment="Left" Margin="48,123,0,0" TextWrapping="Wrap" Text="Street" VerticalAlignment="Top" Foreground="#FF071A48" FontSize="16"/>
+        <TextBox  Margin="155,217,41,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" FontSize="16"/>
+        <TextBlock HorizontalAlignment="Left" Margin="48,216,0,0" TextWrapping="Wrap" Text="State" VerticalAlignment="Top" Foreground="#FF071A48" FontSize="16"/>
+        <TextBox  Margin="155,261,41,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" FontSize="16"/>
+        <TextBlock HorizontalAlignment="Left" Margin="48,261,0,0" TextWrapping="Wrap" Text="Country" VerticalAlignment="Top" Foreground="#FF071A48" FontSize="16"/>
+        <TextBox  Margin="155,310,41,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" FontSize="16"/>
+        <TextBlock HorizontalAlignment="Left" Margin="48,310,0,0" TextWrapping="Wrap" Text="Zip" VerticalAlignment="Top" Foreground="#FF071A48" FontSize="16"/>
+        <Button Command="{Binding ScanCommand , Mode=OneWay}" Background="#FF171496" Foreground="White"  VerticalAlignment="Bottom" Width="100" Height="22" Margin="289,0,41,32" >
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="5"/>
+                </Style>
+            </Button.Resources>
+            <StackPanel>
+
+                <TextBlock Text="Next"/>
+            </StackPanel>
+        </Button>
+        <TextBox  Margin="155,168,41,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" FontSize="16"/>
+        <TextBlock HorizontalAlignment="Left" Margin="48,168,0,0" TextWrapping="Wrap" Text="City" VerticalAlignment="Top" Foreground="#FF071A48" FontSize="16"/>
+    </Grid>
+</UserControl>

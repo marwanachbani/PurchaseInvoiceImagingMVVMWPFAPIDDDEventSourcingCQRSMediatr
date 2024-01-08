@@ -1,0 +1,37 @@
+﻿<UserControl
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             
+             xmlns:local="clr-namespace:WpfApp1.Views" xmlns:viewmodels="clr-namespace:WpfApp1.ViewModels" xmlns:ui="http://schemas.lepo.co/wpfui/2022/xaml" x:Class="WpfApp1.Views.LoginView"
+           
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid Background="White">
+        <Image Width="40" Margin="329,144,431,260" Source="/Views/profile.png"/>
+        <Image Width="40" Margin="329,206,431,206" Source="/Views/password.png" RenderTransformOrigin="0.761,0.507"/>
+        <TextBox Text="{Binding UserName}" Margin="382,154,68,271" Height="25" Width="350" Background="#FF4F91EF" FontFamily="Lucida Console" FontSize="18" Foreground="#FFFFF9F9" SelectionTextBrush="#FFDFE656" >
+            <TextBox.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="5"/>
+                </Style>
+            </TextBox.Resources>
+        </TextBox>
+
+        <TextBox x:Name="pass" Text="{Binding Password}" Margin="382,212,68,212" Height="25" Width="350" Background="#FF4F91EF" FontFamily="Lucida Console" FontSize="18" Foreground="White" SelectionTextBrush="#FFDFE656">
+            <TextBox.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="5"/>
+                </Style>
+            </TextBox.Resources>
+        </TextBox>
+        <Button Command="{Binding LoginCommand}"  Content="SignUp" Height="25" Width="80" Margin="652,281,68,144" Background="#FF4F91EF" FontFamily="Lucida Console" FontSize="14" FontWeight="Bold" Foreground="#FFEAD2D2">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="5"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+    </Grid>
+</UserControl>
